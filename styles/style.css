@@ -1,62 +1,62 @@
 /* стили для шапки сайта*/
 
-.header{
-    padding: 92px 49px 51px;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    font-size: 18px;
-    font-style: normal;
-    font-weight: 400;
+.header {
+  padding: 92px 49px 51px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
 }
 
-.header nav{
-        align-self: center;
+.header nav {
+  align-self: center;
 }
 
-.header-menu{
-    display: flex;
-    gap: 32px;
-    list-style-type: circle;
-    align-self: center;
+.header-menu {
+  display: flex;
+  gap: 32px;
+  list-style-type: circle;
+  align-self: center;
 }
 
-.header-menu-list-no-bullit{
-    list-style-type: none;
+.header-menu-list-no-bullit {
+  list-style-type: none;
 }
 
-.link-decoration{
-    border-bottom: 1px solid #000;
+.link-decoration {
+  border-bottom: 1px solid #000;
 }
 
-.link-decoration-none{
-    text-decoration: none;
+.link-decoration-none {
+  text-decoration: none;
 }
 
-.header-logo-link{
-    width: 145px;
-    height: 105px;
-    justify-self: center;
+.header-logo-link {
+  width: 145px;
+  height: 105px;
+  justify-self: center;
 }
 
-.header-address{
-    justify-self: end;
-    align-self: center;
-    font-style: normal;
-    line-height: 1.35;
+.header-address {
+  justify-self: end;
+  align-self: center;
+  font-style: normal;
+  line-height: 1.35;
 }
 
-.cover{
-    height: 757px;
-    background-image: url(../images/cover.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
+/* стили для ковра*/
+
+.cover {
+  height: 757px;
+  background-image: url(../images/cover.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
-.overlay{
-    position: relative;
-    height: 100%;
-    background-color: rgb(0, 0, 0, 0.6);
-    z-index: 1;
+.overlay {
+  position: relative;
+  height: 100%;
+  background-color: rgb(0, 0, 0, 0.6);
+  z-index: 1;
 }
-
-
