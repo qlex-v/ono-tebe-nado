@@ -1,7 +1,7 @@
 /* стили для шапки сайта*/
 
 .header {
-  padding: 92px 49px 51px;
+  padding: 93px 49px 93px 51px;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   font-size: 18px;
@@ -49,14 +49,86 @@
 
 .cover {
   height: 757px;
+  width: 100%;
+  position: absolute;
   background-image: url(../images/cover.jpg);
   background-repeat: no-repeat;
   background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  color: #fff;
+  text-transform: uppercase;
+  gap: 135px;
 }
 
 .overlay {
-  position: relative;
+  position: absolute;
   height: 100%;
+  width: 100%;
   background-color: rgb(0, 0, 0, 0.6);
   z-index: 1;
 }
+
+.cover-title{
+  font-size: 100px;
+  font-style: normal;
+  font-weight: 700;
+  letter-spacing: 30px;
+  line-height: 100%;
+  padding: 0 50px;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.cover-title-text-center{
+  align-self: center;
+  margin: 8px 55px 0 0;
+}
+
+.cover-title-text-right{
+  align-self: end;
+  margin-bottom: -4px;
+}
+
+.cover-tagline{
+  display: flex;
+  justify-content: end;
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.27;
+  z-index: 2;
+  align-items: center;
+  gap: 78px;
+  padding: 0px 50px 50px 0;
+}
+
+.cover-tagline-text{
+  white-space: pre-wrap;
+}
+
+.cover-tagline-button{
+  background-color: rgb(0, 0, 0, 0);
+  padding: 12px 32px;
+  font-family: 'Raleway';
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.27;
+  color: #fff;
+  border: 1px solid #fff;
+  text-transform: uppercase;
+}
+
+.decrease-letter-spacing{
+  letter-spacing: 5px;
+}
+
+.decrease-letter-spacing-zero{
+  letter-spacing: 0px;
+}
+
+/*стили для секции с лотами*/
