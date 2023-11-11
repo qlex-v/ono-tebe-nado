@@ -50,7 +50,7 @@
 .cover {
   height: 757px;
   width: 100%;
-  position: absolute;
+  position: relative;
   background-image: url(../images/cover.jpg);
   background-repeat: no-repeat;
   background-size: cover;
@@ -68,6 +68,8 @@
   width: 100%;
   background-color: rgb(0, 0, 0, 0.6);
   z-index: 1;
+  right: 0;
+  top: 0;
 }
 
 .cover-title{
@@ -132,3 +134,81 @@
 }
 
 /*стили для секции с лотами*/
+
+.lots{
+  padding: 180px 50px;
+}
+
+.lots-title{
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  text-transform: uppercase;
+  padding: 0 0 27px 40px;
+}
+
+.lots-list{
+  color:#fff;
+  display: flex;
+  gap: 25px;
+}
+
+.lots-list-item{
+  position: relative;
+  width: 430px;
+  height: 450px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 50px 40px;
+}
+
+.lots-list-item-background{
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.lots-list-item-background_film{
+  background-image: url(../images/card-lot-01.jpg);
+}
+
+.lots-list-item-background_book{
+  background-image: url(../images/card-lot-02.jpg);
+}
+
+.lots-list-item-background_painting{
+  background-image: url(../images/card-lot-03.jpg);
+}
+
+.lots-list-item-title{
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 1.25;
+  text-decoration: underline;
+  text-transform: uppercase;
+}
+
+.lots-list-item-paragraph{
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 1.2;
+}
+
+.lots-button{
+  display: inline-block;
+  margin: 30px 0 0 40px;
+  border-bottom: 1px solid #000;
+}
+
+.lots-button-link{
+  color: #000;
+  text-decoration: none;
+  text-transform: lowercase;
+}
+
+.position-higher{
+  z-index: 2;
+}
