@@ -223,9 +223,9 @@
 .about {
   display: grid;
   grid-template-rows: repeat(2, 1fr);
-  grid-template-columns: 1fr 2fr;
+  grid-template-columns: 430px 1fr;
   margin: 0 50px 180px 50px;
-  column-gap: 10px;
+  column-gap: 25px;
   row-gap: 8px;
 }
 
@@ -237,7 +237,6 @@
   grid-area: 1 / 1 / 2 / 2;
   justify-self: center;
   padding: 63px 46px;
-  margin-right: 13px;
 }
 
 .about-title {
@@ -248,6 +247,7 @@
   grid-area: 1 / 2 / 2 / 3;
   align-self: center;
   justify-self: start;
+  padding-top: 8px;
 }
 
 .about-paragraph-container {
