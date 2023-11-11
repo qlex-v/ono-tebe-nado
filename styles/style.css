@@ -1,7 +1,7 @@
 /* стили для шапки сайта*/
 
 .header {
-  padding: 93px 49px 93px 51px;
+  padding: 92px 49px 92px 51px;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   font-size: 18px;
@@ -33,9 +33,12 @@
 }
 
 .header-logo-link {
+  justify-self: center;
+}
+
+.header-logo{
   width: 145px;
   height: 105px;
-  justify-self: center;
 }
 
 .header-address {
@@ -48,7 +51,6 @@
 /* стили для ковра*/
 
 .cover {
-  height: 757px;
   width: 100%;
   position: relative;
   background-image: url(../images/cover.jpg);
@@ -59,7 +61,6 @@
   justify-content: end;
   color: #fff;
   text-transform: uppercase;
-  gap: 135px;
 }
 
 .overlay {
@@ -78,7 +79,7 @@
   font-weight: 700;
   letter-spacing: 30px;
   line-height: 100%;
-  padding: 0 50px;
+  padding: 172px 50px 123px 50px;
   z-index: 2;
   display: flex;
   flex-direction: column;
@@ -105,7 +106,7 @@
   z-index: 2;
   align-items: center;
   gap: 78px;
-  padding: 0px 50px 50px 0;
+  padding: 0px 50px 34px 0;
 }
 
 .cover-tagline-text {
@@ -201,6 +202,10 @@
   display: inline-block;
   margin: 30px 0 0 40px;
   border-bottom: 1px solid #000;
+  font-size: 20px;
+  font-style: normal;
+  font-weight:400;
+  line-height: normal;
 }
 
 .lots-button-link {
@@ -220,7 +225,7 @@
   grid-template-rows: repeat(2, 1fr);
   grid-template-columns: 1fr 2fr;
   margin: 0 50px 180px 50px;
-  column-gap: 25px;
+  column-gap: 10px;
   row-gap: 8px;
 }
 
@@ -232,6 +237,7 @@
   grid-area: 1 / 1 / 2 / 2;
   justify-self: center;
   padding: 63px 46px;
+  margin-right: 13px;
 }
 
 .about-title {
@@ -260,7 +266,7 @@
 
 /*стили для footer*/
 
-.footer{
+.footer {
   display: flex;
   justify-content: space-between;
   align-items: start;
@@ -270,30 +276,29 @@
   padding: 0 50px;
 }
 
-.list-socials{
+.list-socials {
   display: flex;
   justify-content: space-between;
   width: 240px;
   list-style-type: none;
 }
 
-.list-socials-item{
+.list-socials-item {
   width: 48px;
   height: 48px;
   text-align: center;
 }
 
-.footer-menu{
+.footer-menu {
   list-style-type: none;
   text-align: center;
 }
 
-.footer-menu-item{
+.footer-menu-item {
   border-bottom: 1px solid #000;
   display: inline;
 }
 
-.footer-menu-item-active{
+.footer-menu-item-active {
   border-bottom: 0;
 }
-
