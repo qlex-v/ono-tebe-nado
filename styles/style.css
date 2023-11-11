@@ -299,6 +299,11 @@
   display: inline;
 }
 
+.footer-menu-item a{
+  text-decoration: none;
+  color: #000;
+}
+
 .footer-menu-item-active {
   border-bottom: 0;
 }
