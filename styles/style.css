@@ -282,6 +282,7 @@
   font-weight: 400;
   font-style: normal;
   padding: 0 50px;
+  margin-bottom: 90px;
 }
 
 .list-socials {
@@ -297,18 +298,18 @@
   text-align: center;
 }
 
-.menu-horizontal {
+.footer-menu {
   list-style-type: none;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
-.menu-horizontal-item {
+.footer-menu-item {
   text-underline-offset: 4px;
   color: #000;
 }
 
-.menu-horizontal-item-active {
+.footer-menu-item-active {
   text-decoration: none;
 }
