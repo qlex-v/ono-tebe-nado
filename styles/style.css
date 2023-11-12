@@ -1,7 +1,7 @@
 /* стили для шапки сайта*/
 
 .header {
-  padding: 92px 49px 92px 51px;
+  padding: 92px 50px;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   font-size: 18px;
@@ -13,39 +13,43 @@
   align-self: center;
 }
 
-.header-menu {
+.menu {
   display: flex;
   gap: 32px;
   list-style-type: circle;
   align-self: center;
 }
 
-.header-menu-list-no-bullit {
+.menu-list-no-bullit {
   list-style-type: none;
 }
 
 .link-decoration {
-  border-bottom: 1px solid #000;
+  text-underline-offset: 4px;
+  text-decoration-thickness: 1px;
 }
 
 .link-decoration-none {
   text-decoration: none;
 }
 
-.header-logo-link {
+.logo-link {
   justify-self: center;
 }
 
-.header-logo {
+.logo {
   width: 145px;
   height: 105px;
 }
 
-.header-address {
+.address {
   justify-self: end;
   align-self: center;
   font-style: normal;
   line-height: 1.35;
+  display: flex;
+  flex-direction: column;
+  width: 240px;
 }
 
 /* стили для ковра*/
@@ -54,6 +58,7 @@
   width: 100%;
   position: relative;
   background-image: url(../images/cover.jpg);
+  background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   display: flex;
@@ -61,6 +66,8 @@
   justify-content: end;
   color: #fff;
   text-transform: uppercase;
+  padding: 165px 50px 0 50px;
+  gap: 134px;
 }
 
 .overlay {
@@ -77,23 +84,32 @@
   font-size: 100px;
   font-style: normal;
   font-weight: 700;
-  letter-spacing: 30px;
-  line-height: 100%;
-  padding: 172px 50px 123px 50px;
+  letter-spacing: 0.3em;
+  line-height: 100px;
   z-index: 2;
   display: flex;
   flex-direction: column;
   gap: 20px;
 }
 
+.cover-title-text-left {
+  line-height: 1.15;
+}
+
 .cover-title-text-center {
   align-self: center;
-  margin: 8px 55px 0 0;
 }
 
 .cover-title-text-right {
   align-self: end;
-  margin-bottom: -4px;
+}
+
+.decrease-letter-spacing {
+  letter-spacing: 0.6em;
+}
+
+.decrease-letter-spacing-zero {
+  letter-spacing: 0px;
 }
 
 .cover-tagline {
@@ -102,36 +118,32 @@
   font-size: 22px;
   font-style: normal;
   font-weight: 400;
-  line-height: 1.27;
+  line-height: 28px;
   z-index: 2;
   align-items: center;
   gap: 78px;
-  padding: 0px 50px 34px 0;
+  padding-bottom: 50px;
 }
 
 .cover-tagline-text {
-  white-space: pre-wrap;
+  word-spacing: 17px;
+}
+
+.cover-text-decrease-letter-spacing {
+  word-spacing: 23px;
 }
 
 .cover-tagline-button {
   background-color: rgb(0, 0, 0, 0);
   padding: 12px 32px;
-  font-family: "Raleway";
+  font-family: "Raleway", sans-serif;
   font-size: 22px;
   font-style: normal;
   font-weight: 400;
   line-height: 1.27;
   color: #fff;
-  border: 1px solid #fff;
+  border: 1px solid currentColor;
   text-transform: uppercase;
-}
-
-.decrease-letter-spacing {
-  letter-spacing: 5px;
-}
-
-.decrease-letter-spacing-zero {
-  letter-spacing: 0px;
 }
 
 /*стили для секции с лотами*/
@@ -153,16 +165,19 @@
   color: #fff;
   display: flex;
   gap: 25px;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
 .lots-list-item {
   position: relative;
   width: 430px;
-  height: 450px;
+  min-height: 450px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   padding: 50px 40px;
+  flex-grow: 1;
 }
 
 .lots-list-item-background {
@@ -187,7 +202,7 @@
   font-size: 22px;
   font-style: normal;
   font-weight: 700;
-  line-height: 1.25;
+  line-height: 1.2;
   text-decoration: underline;
   text-transform: uppercase;
 }
@@ -199,19 +214,12 @@
 }
 
 .lots-button {
-  display: inline-block;
+  display: block;
   margin: 30px 0 0 40px;
-  border-bottom: 1px solid #000;
   font-size: 20px;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
-}
-
-.lots-button-link {
-  color: #000;
-  text-decoration: none;
-  text-transform: lowercase;
 }
 
 .position-higher {
@@ -233,7 +241,7 @@
   width: 240px;
   height: 240px;
   background-color: #000;
-  border-radius: 120px;
+  border-radius: 50%;
   grid-area: 1 / 1 / 2 / 2;
   justify-self: center;
   padding: 63px 46px;
@@ -278,8 +286,8 @@
 
 .list-socials {
   display: flex;
-  justify-content: space-between;
-  width: 240px;
+  justify-content: end;
+  gap: 48px;
   list-style-type: none;
 }
 
@@ -289,21 +297,18 @@
   text-align: center;
 }
 
-.footer-menu {
+.menu-horizontal {
   list-style-type: none;
-  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
-.footer-menu-item {
-  border-bottom: 1px solid #000;
-  display: inline;
-}
-
-.footer-menu-item a {
-  text-decoration: none;
+.menu-horizontal-item {
+  text-underline-offset: 4px;
   color: #000;
 }
 
-.footer-menu-item-active {
-  border-bottom: 0;
+.menu-horizontal-item-active {
+  text-decoration: none;
 }
